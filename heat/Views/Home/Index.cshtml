@@ -1,0 +1,80 @@
+﻿@model HomeIndexViewModel
+@{
+    ViewData["Title"] = "Расчёт";
+}
+@if (!string.IsNullOrEmpty(TempData["message"]?.ToString()))
+{
+    <div class="alert alert-danger">
+        @TempData["message"]
+    </div>
+}
+<form action="/Home/Result" method="post">
+    Номер варианта:
+    <input name="Name" value="@Model.Variant?.Name" autocomplete="off" data-val="true" />
+    <p>
+        Высота слоя (м):
+        <input name="H" value="@Model.Variant?.H" autocomplete="off" data-val="true" />
+        Нач. температура окатышей (градусы):
+        <input name="t1" value="@Model.Variant?.t1" autocomplete="off" data-val="true" />
+        Нач. температура воздуха (градусы):
+        <input name="T" value="@Model.Variant?.T" autocomplete="off" data-val="true" />
+    </p>
+    <p>
+        Скорость вохдуха на свободное сечение шахты (м/с):
+        <input name="w" value="@Model.Variant?.w" autocomplete="off" data-val="true" />
+        Средняя теплоёмкость воздуха при 200 градусах (кДж/(кг*К):
+        <input name="C" value="@Model.Variant?.C" autocomplete="off" data-val="true" />
+    </p>
+    Расход окатышей:
+    <input name="Gm" value="@Model.Variant?.Gm" autocomplete="off" data-val="true" />
+    Теплоёмкость окатышей:
+    <input name="Cm" value="@Model.Variant?.Cm" autocomplete="off" data-val="true" />
+    <p><p>
+        Диаметр аппарата (м):
+        <input name="d" value="@Model.Variant?.d" autocomplete="off" data-val="true" />
+        Объемный коэффициент теплоотдачи:
+        <input name="a" value="@Model.Variant?.a" autocomplete="off" data-val="true" />
+    </p>
+    <p>
+        <button type="submit"> Рассчитать</button>
+    </p>
+</form>
+<h2>Варианты расчетов</h2>
+<table class="table table-border">
+    <tr>
+        <td>Название варианта</td>
+        <td>Высота слоя (м)</td>
+        <td>Нач. температура окатышей (градусы):</td>
+        <td>Нач. температура воздуха (градусы):</td>
+        <td>Скорость вохдуха на свободное сечение шахты (м/с)</td>
+        <td>Средняя теплоёмкость воздуха при 200 градусах (кДж/(кг*К)</td>
+        <td>Расход окатышей:</td>
+        <td>Теплоёмкость окатышей:</td>
+        <td>Диаметр аппарата (м):</td>
+        <td>Объемный коэффициент теплоотдачи:</td>
+        <td></td>
+    </tr>
+
+    @foreach (var variant in Model.Variants) 
+    {
+        <tr>
+            <td>@variant.Name</td>
+            <td>@variant.H</td>
+            <td>@variant.t1</td>
+            <td>@variant.T</td>
+            <td>@variant.w</td>
+            <td>@variant.C</td>
+            <td>@variant.Gm</td>
+            <td>@variant.Cm</td>
+            <td>@variant.d</td>
+            <td>@variant.a</td>
+            <td>
+                <a href="/Home/Index/?variantId=@variant.Id">Открыть</a>
+                <a href="/Home/Remove/?variantId=@variant.Id">Удалить</a>
+            </td>
+        </tr>
+
+    }
+</table>
+
+

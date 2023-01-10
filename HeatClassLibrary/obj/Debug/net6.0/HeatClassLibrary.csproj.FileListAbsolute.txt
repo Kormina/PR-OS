@@ -1,0 +1,14 @@
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\bin\Debug\net6.0\HeatClassLibrary.deps.json
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\bin\Debug\net6.0\HeatClassLibrary.dll
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\bin\Debug\net6.0\HeatClassLibrary.pdb
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.csproj.AssemblyReference.cache
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.AssemblyInfo.cs
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.dll
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\refint\HeatClassLibrary.dll
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.pdb
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\ref\HeatClassLibrary.dll
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\bin\Debug\net6.0\HeatClassLibrary.runtimeconfig.json
+C:\Users\Катя\Desktop\Новая папка (6)\HeatClassLibrary\obj\Debug\net6.0\HeatClassLibrary.genruntimeconfig.cache
